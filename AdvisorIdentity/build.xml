@@ -35,7 +35,7 @@
         <echo message="${ant.project.name}: ${ant.file}"/>
         <javac debug="true" debuglevel="${debuglevel}" destdir="build/classes" includeantruntime="false" source="${source}" target="${target}">
             <src path="src"/>
-            <src path=".apt_generated"/>
+            <!-- <src path=".apt_generated"/> -->
             <classpath refid="AdvisorIdentity.classpath"/>
         </javac>
     </target>
