@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="AdvisorIdentityEJBEAR">
+        <wb-resource deploy-path="/" source-path="/" tag="defaultRootSource"/>
+        <dependent-module archiveName="AdvisorIdentity.jar" deploy-path="/" handle="module:/resource/AdvisorIdentity/AdvisorIdentity">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="AdvisorIdentityEJB.jar" deploy-path="/" handle="module:/resource/AdvisorIdentityEJB/AdvisorIdentityEJB">
+            <dependent-object>EjbModule_1589987009105</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="AdvisorIdentityEJBClient.jar" deploy-path="/" handle="module:/resource/AdvisorIdentityEJBClient/AdvisorIdentityEJBClient">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>

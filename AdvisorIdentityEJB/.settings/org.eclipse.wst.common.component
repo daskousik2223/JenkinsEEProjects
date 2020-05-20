@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="AdvisorIdentityEJB">
+        <wb-resource deploy-path="/" source-path="/ejbModule" tag="defaultRootSource"/>
+        <property name="java-output-path" value="/AdvisorIdentityEJB/build/classes"/>
+        <property name="ClientProject" value="AdvisorIdentityEJBClient"/>
+        <property name="ClientJARURI" value="AdvisorIdentityEJBClient.jar"/>
+    </wb-module>
+</project-modules>

@@ -1,0 +1,18 @@
+{
+  "plugins": {
+    "guess-types": {
+      
+    },
+    "outline": {
+      
+    },
+    "jshint": {
+      
+    }
+  },
+  "ide": {
+    "scriptPaths": [
+      
+    ]
+  }
+}
