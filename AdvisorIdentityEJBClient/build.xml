@@ -22,11 +22,6 @@
                 <exclude name="**/*.java"/>
             </fileset>
         </copy>
-        <copy includeemptydirs="false" todir="build/classes">
-            <fileset dir=".apt_generated">
-                <exclude name="**/*.java"/>
-            </fileset>
-        </copy>
     </target>
     <target name="clean">
         <delete dir="build/classes"/>
@@ -38,7 +33,6 @@
         <echo message="${ant.project.name}: ${ant.file}"/>
         <javac debug="true" debuglevel="${debuglevel}" destdir="build/classes" includeantruntime="false" source="${source}" target="${target}">
             <src path="ejbModule"/>
-            <src path=".apt_generated"/>
             <classpath refid="AdvisorIdentityEJBClient.classpath"/>
         </javac>
     </target>
