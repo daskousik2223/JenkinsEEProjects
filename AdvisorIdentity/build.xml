@@ -46,6 +46,7 @@
         </javac>
     </target>
     <target name="jar" depends="build">
+    	<echo message="Preparing to create the jar"/>
         <mkdir dir="${jar.dir}"/>
         <jar destfile="${jar.dir}/${ant.project.name}.jar" basedir="${classes.dir}">
             <manifest>
