@@ -7,6 +7,8 @@
     <property name="debuglevel" value="source,lines,vars"/>
     <property name="target" value="1.8"/>
     <property name="source" value="1.8"/>
+    <property name="jar.dir" value="/build/jar"/>
+    <property name="classes.dir" value="/build/jar"/>
     <property name="lib" value="../JARS/*.jar"/>
     <path id="EAR Libraries.libraryclasspath"/>
     <path id="AdvisorIdentity.classpath">
@@ -15,6 +17,7 @@
     </path>
     <target name="init">
         <mkdir dir="build/classes"/>
+    	<mkdir dir="build/jar"/>
         <copy includeemptydirs="false" todir="build/classes">
             <fileset dir="src">
                 <exclude name="**/*.java"/>
@@ -40,6 +43,14 @@
             <!-- <src path=".apt_generated"/> -->
             <classpath refid="AdvisorIdentity.classpath"/>
         </javac>
+    </target>
+    <target name="jar" depends="build">
+        <mkdir dir="${jar.dir}"/>
+        <jar destfile="${jar.dir}/${ant.project.name}.jar" basedir="${classes.dir}">
+            <manifest>
+                <attribute name="Main-Class" value=""/>
+            </manifest>
+        </jar>
     </target>
     <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
 </project>
